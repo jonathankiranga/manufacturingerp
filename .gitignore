@@ -1,0 +1,10 @@
+# Ignore Google Cloud service account credentials
+calendar/client_secret.json
+
+# Ignore vendor dependencies
+vendor/
+
+# Ignore logs and environment files
+*.log
+*.env
+node_modules/

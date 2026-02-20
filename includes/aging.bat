@@ -1,0 +1,1 @@
+sqlcmd -S SENIORDEVELOPER -E -i aging.sql  -o jonabackup.log

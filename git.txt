@@ -1,0 +1,35 @@
+
+git config --global user.name "JonathanKiranga"
+git config --global user.email "JonathanKiranga@gmail.com"
+
+git config --global --list
+
+# 1️⃣ Go to your project folder
+cd /d/inetpub/wwwroot/smartERPv.2.2
+
+# 2️⃣ Remove any existing Git repo (resets previous sync)
+rm -rf .git
+
+# 3️⃣ Initialize a fresh Git repository
+git init
+
+# 4️⃣ Create a .gitignore for PHP project (optional but recommended)
+echo "vendor/
+*.log
+*.env
+node_modules/" > .gitignore
+
+# 5️⃣ Stage all files
+git add .
+
+# 6️⃣ Commit the files
+git commit -m "smartERP v2.2 initial commit"
+
+# 7️⃣ Connect to GitHub
+git remote add origin https://github.com/YOUR_USERNAME/smartERPv.2.2.git
+
+# 8️⃣ Set main branch
+git branch -M main
+
+# 9️⃣ Push to GitHub
+git push -u origin main
